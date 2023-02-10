@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Doha</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800,900" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#e1e1e1">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form__container">
+            <h2 class="form__title">Додати нову задачу</h2>
+            <div class="form__block">
+                <form id="form" class="form">
+                    <input id="taskInput" class="form__input" type="text" placeholder="Що потрібно зробити?">
+                    <button class="form__button" type="submit">Додати</button>
+                </form>
+            </div>
+            <div class="form__buttons">
+                <button id="clear-done-btn" class="form__button form__button-clear-done">Видалити виконані задачі</button>
+                <button id="clear-all-btn" class="form__button form__button-clear-all">Видалити всі задачі</button>
+            </div>
+        </div>
+        <div class="tasks__block">
+            <ul id="task-list" class="tasks__list">
+                <!-- <li id="empty-list" class="tasks__empty-list empty">
+                    <p class="empty__text">Наразі задач немає</p>
+                </li> -->
+
+                <!-- <li class="tasks__item item">
+                    <button data-action="change" class="item__button item__button-3">
+                            <img class="item__icon" src="./img/change.png" alt="">
+                    </button>
+                    <p class="item__text">Сходить попоїсти!!!</p>
+                    <div class="item__buttons">
+                        <button data-action="done" class="item__button item__button-1">
+                            <img class="item__icon" src="./img/done.png" alt="">
+                        </button>
+                        <button data-action="delete" class="item__button item__button-2">
+                            <img class="item__icon" src="./img/delete.png" alt="">
+                        </button>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
